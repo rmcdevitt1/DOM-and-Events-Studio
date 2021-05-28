@@ -12,6 +12,7 @@ function init () {
     const left = document.getElementById("left");
     const right = document.getElementById("right");
 
+
         function takeoffConfirm () {
             let confirm = window.confirm("Confirm that the shuttle is ready for takeoff.");
             if (confirm) {
@@ -42,6 +43,10 @@ function init () {
         }
         missionAbort.addEventListener("click", abort);
 
+        function up () {
+            spaceShuttleHeight.innerHTML += 10000;
+        }
+        goingUp.addEventListener("click", up);
 
 
 }
