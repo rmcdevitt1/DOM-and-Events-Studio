@@ -7,6 +7,11 @@ function init () {
     const landingButton = document.getElementById("landing");
     const abortMissionButton = document.getElementById("missionAbort");
 
+    const up = document.getElementById("up");
+    const down = document.getElementById("down");
+    const left = document.getElementById("left");
+    const right = document.getElementById("right");
+
         function takeoffConfirm () {
             let confirm = window.confirm("Confirm that the shuttle is ready for takeoff.");
             if (confirm) {
