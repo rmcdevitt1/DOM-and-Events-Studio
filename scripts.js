@@ -113,12 +113,26 @@ function init () {
     upButton.addEventListener("click", moveUp);
 
 
+    function moveDown () {
+        shuttle.style.top = parseInt(shuttle.style.top) + 10 + "px";
+        spaceShuttleHeight.innerHTML = Number(spaceShuttleHeight.innerHTML) + 10000;
+    }
+    downButton.addEventListener("click", moveDown);
+
+
+
     function moveRight () {
         shuttle.style.left = parseInt(shuttle.style.left) + 10 + "px";
     }
     rightButton.addEventListener("click", moveRight);
 
     
+    function moveLeft () {
+        shuttle.style.right = parseInt(shuttle.style.right) + 10 + "px";
+    }
+    leftButton.addEventListener("click", moveLeft);
+
+
 }
 
 window.addEventListener("load", init);
